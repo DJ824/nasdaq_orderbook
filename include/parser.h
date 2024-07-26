@@ -1,4 +1,4 @@
-// parser.h
+
 
 #ifndef NASDAQ_ORDERBOOK_PARSER_H
 #define NASDAQ_ORDERBOOK_PARSER_H
@@ -24,4 +24,4 @@ private:
     uint32_t fast_float_to_int(const std::string& s);
 };
 
-#endif //NASDAQ_ORDERBOOK_PARSER_H
+#endif
