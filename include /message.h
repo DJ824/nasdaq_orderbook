@@ -1,5 +1,3 @@
-
-
 #ifndef NASDAQ_ORDERBOOK_MESSAGE_H
 #define NASDAQ_ORDERBOOK_MESSAGE_H
 #include <cstdint>

@@ -24,5 +24,6 @@ public:
 
 };
 
+#endif
 
-#endif //NASDAQ_ORDERBOOK_CENTRAL_ORDERBOOK_H
+

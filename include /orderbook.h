@@ -4,6 +4,8 @@
 
 #ifndef NASDAQ_ORDERBOOK_ORDERBOOK_H
 #define NASDAQ_ORDERBOOK_ORDERBOOK_H
+#include <spdlog/async.h>
+#include <spdlog/sinks/basic_file_sink.h>
 #include <iostream>
 #include <map>
 #include <unordered_map>
@@ -20,6 +22,8 @@ private:
     std::map<uint32_t , limit *, std::less<>> offers_;
     std::unordered_map<std::pair<uint32_t, bool>, limit*, boost::hash<std::pair<uint32_t, bool>>> limit_lookup_;
     std::unordered_map<uint64_t, order*> order_lookup_;
+    std::shared_ptr<spdlog::logger> async_logger;
+
 
 public:
     orderbook();
@@ -34,4 +38,4 @@ public:
 };
 
 
-#endif //NASDAQ_ORDERBOOK_ORDERBOOK_H
+#endif

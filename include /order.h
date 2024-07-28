@@ -31,4 +31,4 @@ public:
 };
 
 
-#endif //NASDAQ_ORDERBOOK_ORDER_H
+#endif
