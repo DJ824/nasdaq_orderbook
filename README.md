@@ -6,5 +6,4 @@ handles multiple symbols by having a central_orderbook, which is just std::unord
 Add Order, Execute Order, Replace Order(modify), Cancel Order, Delete Order
 market buy/sells are ignored as the execute order message reflects the same result of the trade in the book
 
-currently parses 6.3 million messages in ~4 seconds
-going to try multithreading, one thread per symbol
+currently parses 6.3 million messages in ~4 seconds across 3 symbols 
